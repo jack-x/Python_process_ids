@@ -4,6 +4,7 @@ import subprocess
 import signal
 
 def getProcessList():
+	# Sample Output ['naman', '1696', '/usr/lib/gnome-settings-daemon/gsd-power'], ['naman', '1697', '/usr/lib/gnome-settings-daemon/gsd-print-notifications'], ['naman', '1699', '/usr/lib/gnome-settings-daemon/gsd-rfkill'], ['naman', '1700', '/usr/lib/gnome-settings-daemon/gsd-screensaver-proxy'],
 	ret =str( os.system("ps -ef > processes.txt"))
 	f = open("processes.txt",'r')
 	lines = f.readlines()
